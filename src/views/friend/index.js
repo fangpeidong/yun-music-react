@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Friends() {
-  return <div>Friends</div>;
+function Friend() {
+  return <div>Friend</div>;
 }
 
-export default Friends;
+export default Friend;
