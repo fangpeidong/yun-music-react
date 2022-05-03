@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Carousel } from 'antd';
 import { BannerWrapper, BannerLeft, BannerRight, BannerControl } from './style';
 import { getTopBanners } from '@/apis/recommend';
@@ -12,11 +12,9 @@ function TopBanner() {
 
   const bannerRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const bannerChange = useCallback((from, to) => {
-    setTimeout(() => {
-      setCurrentIndex(to);
-    }, 0);
-  }, []);
+  const bannerChange = (from, to) => {
+    setCurrentIndex(to);
+  };
 
   useEffect(() => {
     _getTopBanners();
