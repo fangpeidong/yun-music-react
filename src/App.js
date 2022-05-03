@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { HashRouter } from 'react-router-dom';
+import AppHeader from '@/components/AppHeader';
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>btn {count}</button>
+      <HashRouter>
+        <AppHeader />
+      </HashRouter>
     </div>
   );
 }
