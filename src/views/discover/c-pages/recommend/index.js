@@ -3,6 +3,9 @@ import TopBanner from './c-cpns/top-banner';
 import HotRecommend from './c-cpns/hot-recommend';
 import NewAlbum from './c-cpns/new-album';
 import Ranking from './c-cpns/ranking';
+import UserLogin from './c-cpns/user-login';
+import SettleSinger from './c-cpns/settle-singer';
+import HotRadio from './c-cpns/hot-radio';
 import { Content, RecommendLeft, RecommendRight } from './style';
 
 function Recommend() {
@@ -15,7 +18,11 @@ function Recommend() {
           <NewAlbum />
           <Ranking />
         </RecommendLeft>
-        <RecommendRight></RecommendRight>
+        <RecommendRight>
+          <UserLogin />
+          <SettleSinger />
+          <HotRadio />
+        </RecommendRight>
       </Content>
     </div>
   );
