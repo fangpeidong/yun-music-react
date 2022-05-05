@@ -17,14 +17,15 @@ const routes = [
         render: () => <Redirect to="/discover/recommend" />,
       },
       {
-        path: '/discover',
-        exact: true,
-        render: () => <Redirect to="/discover/recommend" />,
+        path: '/discover/recommend',
+        component: React.lazy(() =>
+          import('../views/discover/c-pages/recommend')
+        ),
       },
       {
-        path: '/discover/recommend',
-        component: React.lazy((_) =>
-          import('../views/discover/c-pages/recommend')
+        path: '/discover/ranking',
+        component: React.lazy(() =>
+          import('../views/discover/c-pages/ranking')
         ),
       },
     ],

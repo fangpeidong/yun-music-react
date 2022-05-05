@@ -2,7 +2,7 @@ import React from 'react';
 import TopBanner from './c-cpns/top-banner';
 import HotRecommend from './c-cpns/hot-recommend';
 import NewAlbum from './c-cpns/new-album';
-import Ranking from './c-cpns/ranking';
+import RankingList from './c-cpns/ranking-list';
 import UserLogin from './c-cpns/user-login';
 import SettleSinger from './c-cpns/settle-singer';
 import HotRadio from './c-cpns/hot-radio';
@@ -16,7 +16,7 @@ function Recommend() {
         <RecommendLeft>
           <HotRecommend />
           <NewAlbum />
-          <Ranking />
+          <RankingList />
         </RecommendLeft>
         <RecommendRight>
           <UserLogin />

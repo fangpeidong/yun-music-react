@@ -22,7 +22,7 @@ function NewAlbum() {
       <div className="content">
         <button
           className="arrow arrow-left sprite_02"
-          onClick={(e) => pageRef.current.prev()}
+          onClick={() => pageRef.current.prev()}
         ></button>
         <div className="album">
           <Carousel dots={false} ref={pageRef}>

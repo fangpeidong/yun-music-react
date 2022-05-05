@@ -6,10 +6,10 @@ import { getSizeImage } from '@/utils/format-utils';
 
 function SettleSinger() {
   const [settleSings, setSettleSings] = useState([]);
-  async function _getArtistList() {
+  const _getArtistList = async () => {
     const res = await getArtistList(5, 5001);
     setSettleSings(res.artists);
-  }
+  };
 
   useEffect(() => {
     _getArtistList();

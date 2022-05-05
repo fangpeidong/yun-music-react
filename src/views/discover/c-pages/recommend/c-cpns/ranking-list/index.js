@@ -4,7 +4,7 @@ import ThemeHeaderRCM from '@/components/ThemeHeaderRCM';
 import TopRanking from '@/components/TopRanking';
 import { RankingWrapper } from './style';
 
-function Ranking() {
+function RankingList() {
   const [upRanking, setUpRanking] = useState({});
   const [newRanking, setNewRanking] = useState({});
   const [originRanking, setOriginRanking] = useState({});
@@ -44,4 +44,4 @@ function Ranking() {
   );
 }
 
-export default Ranking;
+export default RankingList;
