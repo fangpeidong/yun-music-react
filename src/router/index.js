@@ -28,6 +28,10 @@ const routes = [
           import('../views/discover/c-pages/ranking')
         ),
       },
+      {
+        path: '/discover/songs',
+        component: React.lazy(() => import('../views/discover/c-pages/songs')),
+      },
     ],
   },
   {
